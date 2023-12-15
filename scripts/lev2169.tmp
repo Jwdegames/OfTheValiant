@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://dc7a1rl477d03"]
+
+[ext_resource type="Script" path="res://scripts/board_manager.gd" id="1_jucg3"]
+[ext_resource type="Texture2D" uid="uid://c3jfgos41qsh8" path="res://sprites/tiles/Grass.png" id="2_irkhf"]
+[ext_resource type="Script" path="res://scripts/tile.gd" id="3_36ivs"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="board_manager" type="Node" parent="."]
+script = ExtResource("1_jucg3")
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="Grass" type="Sprite2D" parent="."]
+position = Vector2(-80, 684)
+texture = ExtResource("2_irkhf")
+script = ExtResource("3_36ivs")
