@@ -16,7 +16,7 @@ var change_type: String = "Level"
 
 
 # Sets the limits of the camera
-func set_limits(left_bound: float, right_bound: float, upper_bound: float, lower_bound: float) -> void:
+func set_limits(left_bound: int, right_bound: int, upper_bound: int, lower_bound: int) -> void:
 	limit_left = left_bound
 	limit_right = right_bound
 	limit_top = upper_bound

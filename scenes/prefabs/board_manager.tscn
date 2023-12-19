@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://dwju2rlswrvda"]
+
+[ext_resource type="Script" path="res://scripts/board_manager.gd" id="1_rpl4m"]
+[ext_resource type="Script" path="res://scripts/GameCamera.gd" id="2_leosv"]
+
+[node name="board_manager" type="Node"]
+script = ExtResource("1_rpl4m")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+script = ExtResource("2_leosv")
